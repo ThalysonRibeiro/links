@@ -53,6 +53,11 @@ li {
   border-radius: 10px;
 }
 
+li:hover {
+  background: #ffffff11;
+  transition: .7s ease-in-out;
+}
+
 .bi {
   padding-right: 25px;
 }
