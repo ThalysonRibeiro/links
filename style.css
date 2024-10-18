@@ -7,14 +7,15 @@
 
 body {
   animation: gradient 10s ease alternate infinite;
-  background: linear-gradient(-45deg, #210332, #000017, #000000) no-repeat;
+  background: linear-gradient(-45deg, #e1a8ff, #b6b6fc, #ffa7a7) no-repeat;
   background-size: 300% 300%;
+  /* background-color: #eeeff9; */
   width: 100%;
   height: 100vh;
   overflow: hidden;
   display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
 }
 
 @keyframes gradient {
@@ -27,16 +28,30 @@ body {
   }
 }
 
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: transparent;
-  background-image: url("");
-  background-repeat: no-repeat;
+header {
+  background-image: url(pxfuel.jpg);
   background-size: cover;
   background-position: center;
-  z-index: -1;
+  object-fit: cover;
+  width: 100%;
+  height: 100px;
+  margin-bottom: 6rem;
+}
+
+.head__img {
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.head__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
 }
 
 section {
@@ -56,26 +71,38 @@ ul {
 }
 
 li {
-  width: 600px;
-  height: 50px;
+  width: 500px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid rgba(205, 205, 205, 0.144);
+  background-color: #000210;
+  border: 1px solid rgb(205, 205, 205);
   border-radius: 10px;
 }
 
 li:hover {
   background: #ffffff11;
-  transition: .7s ease-in-out;
+  transition: .3s ease-in-out;
 }
+
+li a {
+  width: 100%;
+  text-align: center;
+  padding: 5px 30px;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  text-transform: capitalize;
+  font-family: sans-serif;
+}
+
+li a:hover {
+  color: #000210;
+}
+
 
 .bi {
   padding-right: 25px;
-}
-
-.bi-github {
-  color: #ffffff;
 }
 
 .bi-linkedin {
@@ -88,14 +115,6 @@ li:hover {
 
 .bi-envelope-at-fill {
   color: #0040ff;
-}
-
-li a {
-  text-decoration: none;
-  color: #ffffff;
-  font-size: 20px;
-  text-transform: capitalize;
-  font-family: sans-serif;
 }
 
 @media (min-width: 344px) and (max-width:767px) {

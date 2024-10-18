@@ -1,53 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Meus links de contato" />
+    <meta name="keywords" content="site links de contato" />
+    <meta name="author" content="rafa-dev" />
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Meus links de contato" />
-  <meta name="keywords" content="site links de contato" />
-  <meta name="author" content="rafa-dev" />
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Links</title>
 
-  <link rel="stylesheet" href="style.css">
-  <title>Links</title>
+    <!-- Scripts necessários -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script>
 
-  <!-- Scripts necessários -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/stats.js/r17/Stats.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+  </head>
 
-
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-</head>
-
-<body>
-  <section>
-    <div class="conteudo-links">
-      <ul>
-        <li>
-          <i class="bi bi-github"></i>
-          <a href="https://github.com/ThalysonRibeiro" target="_blank">github</a>
-        </li>
-        <li>
-          <i class="bi bi-linkedin"></i>
-          <a href="https://www.linkedin.com/feed/" target="_blank">linkedin</a>
-        </li>
-        <li>
-          <i class="bi bi-whatsapp"></i>
-          <a href="" onclick="enviarMensagem()">whatsapp</a>
-        </li>
-        <li>
-          <i class="bi bi-envelope-at-fill"></i>
-          <a href="mailto:rafinha.head@gmail.com?subject=Contato via Website">rafinha.head@gmail.com</a>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <div id="particles-js"></div>
-  <script src="script.js"></script>
-  <script src="particles.js"></script>
-</body>
-
+  <body>
+    <header>
+      <div class="head__img"><img src="profile.jpg" alt="" /></div>
+    </header>
+    <section>
+      <div class="conteudo-links">
+        <ul>
+          <li>
+            <a href="https://github.com/ThalysonRibeiro" target="_blank"
+              ><i class="bi bi-github"></i>github</a
+            >
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/feed/" target="_blank"
+              ><i class="bi bi-linkedin"></i>linkedin</a
+            >
+          </li>
+          <li>
+            <a href="" onclick="enviarMensagem()"
+              ><i class="bi bi-whatsapp"></i>whatsapp</a
+            >
+          </li>
+          <li>
+            <a href="mailto:rafinha.head@gmail.com?subject=Contato via Website"
+              ><i class="bi bi-envelope-at-fill"></i>rafinha.head@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+    </section>
+    <div id="particles-js"></div>
+    <script src="script.js"></script>
+  </body>
 </html>
