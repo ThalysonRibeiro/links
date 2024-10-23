@@ -7,9 +7,9 @@
 
 body {
   animation: gradient 10s ease alternate infinite;
-  background: linear-gradient(-45deg, #e1a8ff, #b6b6fc, #ffa7a7) no-repeat;
+  background: linear-gradient(-45deg, #00031e, #000059, #00031e) no-repeat;
   background-size: 300% 300%;
-  /* background-color: #eeeff9; */
+  /* background-color: #ebecfe; */
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -29,10 +29,6 @@ body {
 }
 
 header {
-  background-image: url(pxfuel.jpg);
-  background-size: cover;
-  background-position: center;
-  object-fit: cover;
   width: 100%;
   height: 100px;
   margin-bottom: 6rem;
@@ -65,7 +61,7 @@ ul {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   height: 400px;
   padding: 0;
 }
@@ -75,25 +71,30 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 2rem;
   background-color: #000210;
   border: 1px solid rgb(205, 205, 205);
   border-radius: 10px;
 }
 
 li:hover {
-  background: #ffffff11;
+  background: #e8eafffe;
   transition: .3s ease-in-out;
 }
 
 li a {
   width: 100%;
   text-align: center;
-  padding: 5px 30px;
+  padding: 10px 30px;
   text-decoration: none;
   color: #ffffff;
   font-size: 1rem;
   text-transform: capitalize;
   font-family: sans-serif;
+
+  & li {
+    display: flex;
+  }
 }
 
 li a:hover {
